@@ -107,7 +107,7 @@
   }
   
   /*=============== THEME ===============*/
-  
+ 
   
   /*========== Variables Dark theme ==========*/
   
@@ -156,9 +156,57 @@
   }
   /*=============== HEADER & NAV===============*/
 
-
+  .header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: var(z-index);
+    background: var(--body-color);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height);
+}
+.nav_logo{
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+    transition: .4s;
+}
+.nav_logo:hover{
+    color: var(--first-color-alt);
+}
+.nav_menu{
+    position: fixed;
+    bottom: 1rem;
+    width: 90%;
+    border-radius: 4rem;
+    background-color: hsl(var(--second-hue), 32%, 16%, .8);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2.25rem;
+}
+.nav_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_link{
+    font-size: 1.25rem;
+    padding: .4rem;
+    border-radius: 5rem;
+    color: var(--text-color);
+    display: flex;
+}
 /* Active link */
-
+.active-link{
+    background: linear-gradient(180deg,
+    hsla(var(--first-hue), var(--sat), var(--lig), 1),
+    hsla(var(--first-hue), var(--sat), var(--lig), .2)   
+    );
+    box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
+}
 
 /* Change background header */
 
