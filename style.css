@@ -381,7 +381,17 @@
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-
+@media screen and (max-width: 450px) {
+  .home_greeting{
+    margin-top: -4rem;
+  }
+  .home_handle {
+    height: 230px;
+  }
+  img {
+    max-width: 100%;
+    height: 90%;
+}
 
 /* For medium devices */
 
