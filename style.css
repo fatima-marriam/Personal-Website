@@ -381,7 +381,7 @@
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 450px) {
   .home_greeting{
     margin-top: -2rem;
   }
