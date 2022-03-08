@@ -160,7 +160,7 @@
     top:0;
     left:0;
     width: 100%;
-    z-index: var(z-index);
+    z-index: 999999;
     background: var(--body-color);
 }
 .nav{
@@ -223,7 +223,9 @@
 }
 
 /* Change background header */
-
+.scroll-header{
+  box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
+}
 
 /*=============== HOME ===============*/
 .home_container{
@@ -344,7 +346,39 @@
   color: var(--body-color);
 }
 /*=============== ABOUT ===============*/
-
+.about__container{
+  row-gap: 2.5rem;
+}
+.about__img{
+  width: 220px;
+  border-radius: 1.5rem;
+  justify-self: center;
+}
+.about__data{
+  text-align: center;
+}
+.about__info{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .5rem;
+  margin-bottom: 2rem;
+}
+.about__box{
+  background-color: var(--container-color);
+  border-radius: .75rem;
+  padding: .75rem .5rem;
+}
+.about__icon{
+  font-size: 1.9rem;
+  color: var(--first-color);
+  margin-bottom: .5rem;
+}
+.about__title{
+  font-size: var(--small-font-size);
+}
+.about__description{
+  margin-bottom: 2rem;
+}
 
 /*=============== SKILLS ===============*/
 
