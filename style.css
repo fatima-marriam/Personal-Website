@@ -202,8 +202,8 @@
 }
 @media screen and (max-width: 900px) {
   .nav_menu{
-    width: 45%;
-    left: 27%;
+    width: 60%;
+    left: 21%;
     position: fixed;
     padding: .68rem 1.9rem;
     bottom: .23rem;
