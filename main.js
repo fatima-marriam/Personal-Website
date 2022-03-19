@@ -65,6 +65,7 @@ linkWork.forEach(l=> l.addEventListener('click', activeWork))
 // =======================swiper testimonial
 var swiperTestimonial = new Swiper(".testimonial__container", {
     spaceBetween: 24,
+    autoplay: true,
     loop: true,
     grabCursor: true,
     pagination: {
