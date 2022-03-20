@@ -784,9 +784,6 @@ color: var(--body-color);
   font-size: var(--smaller-font-size);
 }
 
-/*=============== SCROLL BAR ===============*/
-
-
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 450px) {
@@ -811,7 +808,7 @@ color: var(--body-color);
 
 /* For large devices */
 
-/* =========================scroll */
+/* =========================scroll bar===================>*/
 ::-webkit-scrollbar{
   width: 10px;
   background: var(--container-color);
