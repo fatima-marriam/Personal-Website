@@ -235,30 +235,6 @@
     padding: 1rem 2.25rem;
     transition: .4s; /* for light theme */
 }
-@media screen and (min-width: 920px) {
-  .nav_menu{
-    width: 26%;
-    left: 38%;
-    position: fixed;
-    padding: .68rem 1.9rem;
-    bottom: .23rem;
-    margin-bottom: 10px;
-  }
-  .container{
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media screen and (max-width: 900px) {
-  .nav_menu{
-    width: 60%;
-    left: 21%;
-    position: fixed;
-    padding: .68rem 1.9rem;
-    bottom: .23rem;
-    margin-bottom: 10px;
-  }
-}
 .nav_list{
     display: flex;
     justify-content: space-between;
@@ -802,11 +778,190 @@ color: var(--body-color);
   margin-bottom: 5px;
 }
 }
+@media screen and (max-width: 320px) {
+  .nav_menu{
+    width: 209px;
+    padding: 1rem 1.5rem;
+    right:0;
+    left:0;
+    margin: 0 auto;
+  }
+  .home_buttons{
+    flex-direction: column;
+  }
+  .home_handle{
+    width: 150px;
+    height: 253px;
+  }
+  .home_img{
+    width: 130px;
+  }
+  .about__info{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skills__box{
+    column-gap: 1rem;
+  }
+  .skills__name{
+    font-size: var(--small-font-size);
+  }
+  .services__container{
+    grid-template-columns: 145px;
+    justify-content: center;
+  }
+  .work__item{
+    font-size: var(--small-font-size);
+  }
+  .work__filters{
+    column-gap: .25rem;
+  }
+}
 
 /* For medium devices */
-
-
+@media screen and (min-width: 576px) {
+  .nav_menu{
+    width: 328px;
+    right:0;
+    left:0;
+    margin: 0 auto;
+  }
+  .about__info{
+    grid-template-columns: repeat(3, 140px);
+    justify-content: center;
+  }
+  .about__description{
+    padding: 0 5rem;
+  }
+  .skills__container{
+    justify-content: center;
+  }
+  .skills__content{
+    padding: 2rem 4rem;
+  }
+  .services__container{
+    grid-template-columns: repeat(2, 160px);
+    justify-content: center;
+  }
+  .services__modal-content{
+    width: 500px;
+    padding: 4.5rem 2.5rem 2.5rem;
+  }
+  .services__modal-description{
+    padding: 0 3.5rem;
+  }
+  .work__container{
+    justify-content: center;
+  }
+  .work__img{
+    width: 295px;
+  }
+  .contact__info{
+    grid-template-columns: 300px;
+    justify-content: center;
+  }
+  .contact__form{
+    width: 360px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 767px) {
+  .work__container{
+    grid-template-columns: repeat(2, max-content);
+  }
+  .contact__container{
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    column-gap: 3rem;
+  }
+}
 /* For large devices */
+@media screen and (min-width: 992px) {
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section{
+    padding: 6.5rem 0 1rem;
+  }
+  .section__title{
+    margin-bottom: 3.5rem;
+  }
+  .nav{
+    height: calc(var(--header-height) + 1rem);
+  }
+  .home_handle{
+    width: 290px;
+    height: 400px;
+  }
+  .home_img{
+    width: 220px;
+  }
+  .home_scroll-link{
+    padding: .4rem;
+    font-size: 1.25rem;
+  }
+  .home_scroll::after{
+    transform: rotate(90deg) translate(16px, 0);
+  }
+  .home_scroll-icon{
+    font-size: 2rem;
+  }
+  .about__container{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+  }
+  .about__img{
+    width: 350px;
+  }
+  .about__data{
+    text-align: initial;
+  }
+  .about__info{
+    justify-content: initial;
+  }
+  .about__box{
+    text-align: center;
+    padding: 1rem 1.25rem;
+  }
+  .about__description{
+    padding: 0 4rem 0 0;
+    margin-bottom: 2.5rem;
+  }
+  .skills__container{
+    grid-template-columns: repeat(2, 350px);
+    column-gap: 3rem;
+  }
+  .services__container{
+    grid-template-columns: repeat(3, 192px);
+    column-gap: 3rem;
+  }
+  .services__card{
+    padding: 5rem 2rem 1.5rem;
+  }
+  .work__container{
+    gap: 3rem;
+  }
+  .work__card{
+    padding: 1.25rem;
+  }
+  .work__img{
+    margin-bottom: 1rem;
+  }
+  .work__title{
+    margin-bottom: .5rem;
+  }
+  .testimonial__container{
+    width: 750px;
+  }
+  .testimonial__card{
+    padding: 1.5rem 2rem;
+  }
+  .contact__container{
+    column-gap: 6rem;
+  }
+
+}
 
 /* =========================scroll bar===================>*/
 ::-webkit-scrollbar{
